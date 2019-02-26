@@ -1,0 +1,79 @@
+.newTodo {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.enter {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #1ec0ff;
+  font-size: 25px;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+}
+
+.search {
+  font-size: 20px;
+}
+
+.todoTable {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.todoNumber{
+  text-align: right
+}
+
+.todoItem{
+  text-align: left;
+  padding-left: 25px;
+}
+
+.remove:hover{
+  background: #1F2124;
+  color: white;
+}
+
+.remove {
+  background: #f9d423;
+  font-size: 18px;
+  border-radius: 3px;
+  border: none;
+}
+
+.clear {
+  margin-top: 15px;
+  margin-right: 8px;
+  font-size: 25px;
+  padding: 10px;
+  background: #f9d423;
+  margin-bottom: 20px;
+}
+
+.reset {
+  margin-top: 15px;
+  margin-left: 8px;
+  font-size: 25px;
+  padding: 10px;
+  background: #f9d423;
+  margin-bottom: 20px;
+}
+
+.titles{
+  background: #f9d423;
+  height: 150px;
+}
+.title{
+  font-size: 50px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.subtitle{
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
