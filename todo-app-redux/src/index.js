@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './store/containers/App';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
 import rootReducer from './store/reducers/rootReducers';
-
+import thunk from 'redux-thunk';
 
 // Create store
-const store = createStore(rootReducer);
+const store = createStore(
+    rootReducer,
+    applyMiddleware(thunk)
+);
 
 const appRoot = (
     <Provider store={store}>

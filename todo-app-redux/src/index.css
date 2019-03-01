@@ -4,8 +4,6 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
     font-family: 'Prompt', sans-serif;
 }
 

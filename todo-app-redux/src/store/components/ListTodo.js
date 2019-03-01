@@ -6,9 +6,9 @@ class ListTodo extends React.Component {
         const { searchText, todoList } = this.props.todos;
         // console.log(`searchText: ${searchText}`);
         // console.log(`todoList: ${todoList}`);
-        if(!searchText){
+        if (!searchText) {
             return todoList;
-        }else{
+        } else {
             const upper = searchText[0].toUpperCase();
             const upperValue = searchText.replace(searchText[0], upper);
             return todoList.filter(
@@ -30,14 +30,14 @@ class ListTodo extends React.Component {
                         <th className="todoItem">Task</th>
                         <th>(X)</th>
                     </tr>
-                    {todoList.map((row, index) => (
-                        <tr key={index}>
-                            <td className="todoNumber">Task {index + 1}</td>
-                            <td className="todoItem">{row}</td>
-                            <td><button className="remove" onClick={() => actions.deleteTodo(index)}>X</button></td>
-                        </tr>
-                    ))}
                 </thead>
+                {todoList.map((row, index) => (
+                    <tr key={index}>
+                        <td className="todoNumber">Task {index + 1}</td>
+                        <td className="todoItem">{row}</td>
+                        <td><button className="remove" onClick={() => actions.deleteTodo(index)}>X</button></td>
+                    </tr>
+                ))}
             </table>
         );
     }
